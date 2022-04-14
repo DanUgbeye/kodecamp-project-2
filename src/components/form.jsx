@@ -66,7 +66,7 @@ const Form = () => {
               <textarea id='bio' name='bio' rows="5" placeholder='bio' value={bio} type="bio" onChange={(e) => {setBio(e.target.value)}} className=' outline-none border-2 border-solid border-gray-400 focus:border-[#76568A]  text-gray-700 rounded-md  w-full sm:max-w-md py-2 px-4 resize-none ' required />
           </fieldset>
 
-          <button type="submit" value="Submit" className=' font-semibold w-full h-12 bg-[#c797ec] text-white hover:bg-[#76568A] rounded-lg '>
+          <button type="submit" value="Submit" className=' font-semibold w-full max-w-[10rem] mx-auto flex justify-center items-center h-12 bg-[#c797ec] text-white hover:bg-[#76568A] rounded-lg '>
             submit
           </button>
 
