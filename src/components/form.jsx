@@ -50,9 +50,9 @@ const Form = () => {
           <fieldset className=' flex flex-col gap-4 sm:flex-row sm:items-center mb-8 '>
               <label htmlFor="gender" className=' font-semibold text-lg text-[#76568A] min-w-[7rem] '>gender</label>
               <select id='gender' name='gender' placeholder='gender' value={gender} type="text" onChange={(e) => {setGender(e.target.value)}} className=' outline-none border-2 border-solid border-gray-400 focus:border-[#76568A]  text-gray-700 rounded-md h-12 w-full sm:max-w-md px-4 ' required>
-                <option defaultChecked value="null">select your gender</option>
-                <option value="male">male</option>
-                <option value="female">female</option>
+                <option defaultChecked disabled hidden value="null" className=' text-gray-600 '>select your gender</option>
+                <option value="male" className=' text-gray-600 '>male</option>
+                <option value="female" className=' text-gray-600 '>female</option>
               </select>
           </fieldset>
 
